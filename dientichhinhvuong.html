@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniTest</title>
+</head>
+<body>
+<input type="number" name="number" id="numA" placeholder="NumberA">
+<input type="number" name="number" id="numB" placeholder="NumberB">
+<button onclick="changeNumber()" value="button">Button</button>
+<br>
+<h1 id="kq">Kết Quả</h1>
+<script>
+  function changeNumber() {
+    let numA = document.getElementById("numA").value;
+    let numB = document.getElementById("numB").value;
+    let S = numA * numB
+    document.getElementById("kq").innerHTML = S;
+  }
+</script>
+</body>
+</html>
